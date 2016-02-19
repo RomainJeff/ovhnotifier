@@ -81,7 +81,7 @@ $app->get('/update', function () use ($app, $db) {
 
             $message = \Swift_Message::newInstance()
                 ->setSubject('[OVH] Server '. $reference .' available')
-                ->setFrom(array('server@leagueskins.net'))
+                ->setFrom(array($app['swiftmailer.options']['email']))
                 ->setBody($app['twig']->render('mail.twig', [
                     'server'    => $server,
                     'ovhServer' => $ovhServer
