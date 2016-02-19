@@ -1,19 +1,3 @@
-/*
- Navicat Premium Data Transfer
-
- Source Server         : LeagueSkins
- Source Server Type    : MySQL
- Source Server Version : 50166
- Source Host           : mysql-leagueskins.alwaysdata.net
- Source Database       : leagueskins_servers
-
- Target Server Type    : MySQL
- Target Server Version : 50166
- File Encoding         : utf-8
-
- Date: 02/19/2016 19:45:48 PM
-*/
-
 SET NAMES utf8;
 SET FOREIGN_KEY_CHECKS = 0;
 
