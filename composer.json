@@ -1,0 +1,15 @@
+{
+    "name": "lolgains/ovh-availability",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Romain Quilliot",
+            "email": "romain.addweb@gmail.com"
+        }
+    ],
+    "require": {
+        "twig/twig": "^1.24",
+        "silex/silex": "^1.3",
+        "swiftmailer/swiftmailer": "^5.4"
+    }
+}
