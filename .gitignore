@@ -1,2 +1,5 @@
 vendor/
 .DS_Store
+
+documentation.txt
+conf/database.php
