@@ -1,0 +1,23 @@
+<html>
+<head>
+    <meta charset="utf-8">
+</head>
+<body>
+    <h1>{{server.name}}</h1>
+
+    Currently, <b>{{server.available}}</b> available servers
+    <br><br>
+
+    <table>
+        {% for zone,price in server.zones %}
+            <tr>
+                <td>{{ovhServer.getZone(zone)}}&nbsp;&nbsp;</td>
+                <td>{{price}}</td>
+            </tr>
+        {% endfor %}
+    </table>
+
+    <br>
+    <a target="_blank" href="{{ovhServer.getBuyLink(server.reference, server.quantity)}}">BUY ONE NOW</a>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Register to ovh notifier</title>
+
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    </head>
+
+    <body>
+        <div class="container">  
+            <div style="padding-top: 30px"></div>
+            <h1>Register now</h1>
+            <h4>You'll be notified when a server is available</h4>
+            
+            {% if error %}
+            <br>
+            <div class="alert alert-danger" style="width: 400px;">{{error}}</div>
+            {% endif %}
+
+            {% if success %}
+            <br>
+            <div class="alert alert-success" style="width: 400px;">{{success}}</div>
+            {% endif %}
+            
+            <form method="post" style="margin-top: 30px">
+                <h4 style="margin-top: 10px">Select the serveur you want</h4>
+                <input type="radio" value="KS1" name="server" id="ks1" checked>
+                <label for="ks1" style="font-weight: normal;">Serveur KS-1 <small>(4.99€)</small></label>
+                <br>
+                <input type="radio" value="KS2" name="server" id="ks2">
+                <label for="ks2" style="font-weight: normal;">Serveur KS-2 <small>(9.99€)</small></label>
+
+                <h4 style="margin-top: 10px">Enter your email</h4>
+                <input type="email" class="form-control" required style="width: 400px" placeholder="Email..." name="email">
+                <br>
+                <button class="btn btn-primary">Register now</button>
+            </form>
+        </div>
+    </body>
+</html>
